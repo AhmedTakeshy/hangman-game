@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Hangman | Game</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-  
+
+  <main class="flex">
+    <article class="flex">
+      <h1>Hangman</h1>
+      <h2>Vanilla javascript Hangman game</h2>
+      <p>Use the alphabet below to guess the word</p>
+    </article>
+    <span id="lives"></span>
+    <div class="letters">
+    </div>
+    <div class="guess">
+      <input type="text">
+    </div>
+    <div id="result"></div>
+    <div class="draw">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="buttons">
+      <button id="reset">Reset</button>
+      <button id="start">Start</button>
+
+    </div>
+  </main>
+
 
   <script src="./scripts/script.js"></script>
 </body>
+
 </html>

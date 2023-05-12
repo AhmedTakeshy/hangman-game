@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #a8ff78, #78ffd6);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin: 2rem auto;
+}
+
+main article {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .5);
+    margin-bottom: 3rem;
+}
+
+main article h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+main article h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+main article p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main #lives {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main .letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 50%;
+    gap: 1rem;
+}
+
+main .letters button {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main .letters button:hover,
+main .letters button:disabled {
+    background: rgba(0, 0, 0, .6);
+}
+
+main .guess {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+main .guess input {
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #fff solid 2px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main .guess input::placeholder {
+    color: #fff;
+}
+
+main .guess input:focus {
+    outline: none;
+}
+
+main #result {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main .draw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    border: #fff dashed 2px;
+    padding: 1rem;
+    width: 20rem;
+    height: 13rem;
+    position: relative;
+}
+
+main .draw span {
+    position: absolute;
+    display: none;
+}
+
+main .draw span:nth-child(1) {
+    bottom: 1rem;
+    left: 1rem;
+    width: 11rem;
+    border-top: #fff solid 2px;
+}
+
+main .draw span:nth-child(2) {
+    bottom: 1rem;
+    left: 1.5rem;
+    height: 11rem;
+    border-left: #fff solid 2px;
+}
+
+main .draw span:nth-child(3) {
+    top: 1rem;
+    left: 1rem;
+    width: 6rem;
+    border-top: #fff solid 2px;
+}
+
+main .draw span:nth-child(4) {
+    top: 1rem;
+    left: 6rem;
+    height: .75rem;
+    border-left: #fff solid 2px;
+}
+
+main .draw span:nth-child(5) {
+    top: 1.6rem;
+    left: 5.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: #fff solid 2px;
+    border-radius: 100%;
+}
+
+main .draw span:nth-child(6) {
+    top: 3.1rem;
+    left: 6rem;
+    height: 3rem;
+    border-left: #fff solid 2px;
+}
+
+main .draw span:nth-child(7) {
+    top: 4rem;
+    left: 6rem;
+    width: 2rem;
+    border-top: #fff solid 2px;
+    transform: rotate(24deg);
+}
+
+main .draw span:nth-child(8) {
+    top: 4rem;
+    left: 4.1rem;
+    width: 2rem;
+    border-top: #fff solid 2px;
+    transform: rotate(-24deg);
+}
+
+main .draw span:nth-child(9) {
+    bottom: 6.1rem;
+    left: 6rem;
+    width: 2rem;
+    border-top: #fff solid 2px;
+    transform: rotate(24deg);
+}
+
+main .draw span:nth-child(10) {
+    bottom: 6.1rem;
+    left: 4.1rem;
+    width: 2rem;
+    border-top: #fff solid 2px;
+    transform: rotate(-24deg);
+}
+
+main .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .buttons>button {
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main .buttons>button:hover,
+main .buttons>button:disabled {
+    background: rgba(0, 0, 0, .6);
+}
