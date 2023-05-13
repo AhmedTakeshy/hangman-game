@@ -54,7 +54,6 @@ const guessedLetters = new Set();
 const handleGuess = (event) => {
   const guessedLetter = event;
   if (word.includes(guessedLetter)) {
-    // correct guess
     if (guessedLetters.has(guessedLetter)) {
       alert("Letter already guessed but don't worry, you won't lose a life :)");
       return;
@@ -85,6 +84,7 @@ const lettersBtns = document.querySelectorAll(".btn_letter");
 lettersBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     handleGuess(btn.textContent);
+    btn.setAttribute("disabled", true);
   });
 });
 
@@ -125,6 +125,7 @@ const startGame = async () => {
   word = await getRandomWord();
   displayWord(word);
 };
+
 const startBtn = document.querySelector("#start");
 startBtn.addEventListener("click", () => {
   startGame();
